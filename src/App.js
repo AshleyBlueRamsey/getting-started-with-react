@@ -1,17 +1,14 @@
 import "./App.css";
 
-function App() {
-  const name = "Alice";
-  const url = "https://www.google.com/";
-  const linkText = "Google";
-  const element = (
-    <p>
-      {" "}
-      Hey, {name}! Please visit <a href={url}>{linkText}</a>.
-    </p>
-  );
+function WelcomeBack() {
+  return <p>Welcome back, valued customer!</p>
+}
 
-  return element;
+function App() {
+  return (
+    <WelcomeBack />
+    <WelcomeBack />
+  );
 }
 
 export default App;
