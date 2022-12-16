@@ -1,21 +1,13 @@
-import "./App.css";
-
-function WelcomeBack({ name = "valued customer", adjective = "nice"}) {
-  return (
-  <p>
-    Welcome back, {adjective} {name}!
-    </p>
-  );
-}
+import React from "react";
+const todos = [
+  { completed: false, description: "Finish the Lists and Tables checkpoint" },
+  { completed: false, description: "Clean my desk" },
+  { completed: false, description: "Make lunch" },
+];
 
 function App() {
-  return (
-    <>
-    <WelcomeBack name="Joe" adjective="funny" />
-    <WelcomeBack name="Anna" adjective="clever" />
-    <WelcomeBack />
-    </>
-  );
+  const listItems = todos.map((todo, index) => <li key={index}>{todo}</li>);
+  return <ul>{listItems</ul>;
 }
 
 export default App;
