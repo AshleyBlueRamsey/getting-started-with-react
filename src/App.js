@@ -1,13 +1,20 @@
-import React from "react";
-const todos = [
-  { completed: false, description: "Finish the Lists and Tables checkpoint" },
-  { completed: false, description: "Clean my desk" },
-  { completed: false, description: "Make lunch" },
-];
+import "./App.css";
+import WelcomeBack from "./WelcomeBack";
+import Quote from "./Quote";
+
+const quote = {
+  text:
+    "I am great believer in luck, and I find the harder I work, the more I have of it.",
+  author: "Thomas Jefferson",
+};
 
 function App() {
-  const listItems = todos.map((todo, index) => <li key={index}>{todo}</li>);
-  return <ul>{listItems</ul>;
+  return (
+    <>
+      <WelcomeBack name="Joe" />
+      <Quote quote={quote} />
+    </>
+  );
 }
 
 export default App;
