@@ -3,7 +3,7 @@ import WelcomeBack from "./WelcomeBack";
 import Quote from "./Quote";
 
 const quote = {
-  text:
+    text:
     "I am great believer in luck, and I find the harder I work, the more I have of it.",
   author: "Thomas Jefferson",
 };
